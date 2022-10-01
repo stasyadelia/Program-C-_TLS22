@@ -1,0 +1,23 @@
+//Program untuk menghitung rata-rata sekelompok data
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n_nilai = 0;
+    float nilai;
+    float total = 0;
+    float rata_rata;
+    
+while (nilai != -1){
+    total += nilai;
+    n_nilai ++;
+    cout<<"Masukkan nilai :";
+    cin>>nilai;
+    cout<<"Nilai ke "<<n_nilai<<" adalah "<<nilai<<"\n";
+}
+rata_rata = total / (n_nilai - 1);
+cout<<"Rata-rata nilai yaitu "<<rata_rata<<"\n";
+
+return 0;
+}
